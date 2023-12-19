@@ -18,9 +18,7 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	
-	
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">	
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">Gagan.Kapoor<span>.</span></a>
@@ -848,7 +846,7 @@
 
 			<div class="row block-9">
 				<div class="col-md-8">
-					<form action="mailto:pumpkinhat.ltd@gmail.com" method="post" enctype="text/plain" class="bg-light p-4 p-md-5 contact-form">
+					<form onsubmit="emailsend(); reset(); return false;" class="bg-light p-4 p-md-5 contact-form">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
@@ -872,7 +870,8 @@
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+								<!--	<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">-->
+									<button type="submit" value="Send Message" class="btn btn-primary py-3 px-5"> Send Message</button>
 								</div>
 							</div>
 						</div>
@@ -1006,6 +1005,8 @@
 		<script src="js/google-map.js"></script>
 		
 		<script src="js/main.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js" ></script>
+		<script src="js/sendMail.js"> </script>
 		
 	</body>
 	</html>
