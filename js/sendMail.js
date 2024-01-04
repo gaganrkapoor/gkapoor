@@ -18,10 +18,14 @@ function emailsend()
         Body : varmessagebody
     }).then(
       message => {
-       if (message == 'OK') {
-        swal("Good job!", "Your message has been sent!", "success");
-       }
-       else {swal("Oops!", "There was an internal error, please try again later !", "error");}
+        if (message == 'OK') 
+        {
+          swal("Good job!", "Your message has been sent!", "success");
+        }
+       else
+        {
+        swal("Oops!", "There was an internal error, please try again later !", "error");
+        }
       }
     );
 }
